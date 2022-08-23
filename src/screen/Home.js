@@ -34,6 +34,11 @@ const Home = observer(({ navigation }) => {
       />
       <Button title="Easing" onPress={() => navigation.navigate('Easing')} />
       <Button title="Spring" onPress={() => navigation.navigate('Spring')} />
+      <Button title="Loop" onPress={() => navigation.navigate('Loop')} />
+      <Button
+        title="ProductHoc"
+        onPress={() => navigation.navigate('Product')}
+      />
     </View>
   );
 });

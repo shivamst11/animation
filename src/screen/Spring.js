@@ -17,7 +17,7 @@ const Spring = () => {
     Animated.spring(likeAnimation, {
       toValue: 4,
       friction: 1,
-      tension: 2,
+      tension: 5,
       useNativeDriver: true,
     }).start(() =>
       Animated.timing(likeAnimation, {

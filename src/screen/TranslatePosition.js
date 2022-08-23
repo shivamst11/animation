@@ -18,7 +18,7 @@ const TranslatePosition = () => {
 
   const startAnimation = () => {
     Animated.timing(animation, {
-      toValue: 200,
+      toValue: Dimensions.get('window').width / 2,
       duration: 1000,
       useNativeDriver: true,
     }).start(() =>
@@ -37,8 +37,8 @@ const TranslatePosition = () => {
       <Animated.View
         style={[
           {
-            height: 200,
-            width: 200,
+            height: 100,
+            width: 100,
             backgroundColor: 'red',
           },
           animatedStyle,
@@ -51,8 +51,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
 export default TranslatePosition;

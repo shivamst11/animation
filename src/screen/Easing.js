@@ -23,7 +23,7 @@ const TranslateEasing = () => {
       duration: 1000,
       easing: Easing.bezier(0.1, 1, 0.86, 0.23),
       //easing ;Easing.bounce,
-      //easing;Easing.elastic(2),
+      // easing: Easing.elastic(2),
       //easig : Easing.
       useNativeDriver: true,
     }).start(() =>

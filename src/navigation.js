@@ -10,6 +10,8 @@ import TranslatePosition from './screen/TranslatePosition';
 import Interpolation from './screen/Interpolation';
 import Easing from './screen/Easing';
 import Spring from './screen/Spring';
+import Product from './Hoc/Product';
+import Loop from './screen/Loop';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +26,8 @@ function MyStack() {
         <Stack.Screen name="Interpolation" component={Interpolation} />
         <Stack.Screen name="Easing" component={Easing} />
         <Stack.Screen name="Spring" component={Spring} />
+        <Stack.Screen name="Loop" component={Loop} />
+        <Stack.Screen name="Product" component={Product} />
       </Stack.Navigator>
     </NavigationContainer>
   );
